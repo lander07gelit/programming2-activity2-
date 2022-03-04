@@ -1,0 +1,35 @@
+package ACTIVITY2;
+
+import java.util.Scanner;
+
+public class lander {
+
+  public static void main(String[] args) {
+    Scanner console = new Scanner(System.in);
+    System.out.println();
+    System.out.println();
+    System.out.println();
+
+    System.out.println("Welcome to LANDERG CANDY STORE!");
+    System.out.println("(Candies are avilable, you may buy it online.)");
+
+    System.out.print("How much money do you have? >"); // prompts for a whole number
+    double money = console.nextDouble();
+    System.out.printf("%.2f, that's all?", money);
+
+    System.out.println("Well, let me tell me introduce my own product.");
+    System.out.println("A 100php each TOBLERON");
+    System.out.println("B 12php each BENG-BENG");
+    System.out.println("C 10php each POTCHI");
+    System.out.println("D 20php each OREO");
+    System.out.println("E 15php each MAX");
+    System.out.println("F 10php each TAMARINDO");
+
+    Scanner input = new Scanner(System.in);
+    System.out.print("So, What do you like sir/maam? >"); // prompts for a whole number
+    String a = input.next();
+    if (a.equals("A"))
+      if (money > 1000)
+        System.out.println("HAVE A GOOD DAY!!! COME BACK AGAIN SIR/MAAM.THANK YOU.");
+  }
+}
